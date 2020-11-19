@@ -7,7 +7,7 @@
 <hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
 
 # 大纲
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20201119195003706.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21lZXRsaWFuZw==,size_16,color_FFFFFF,t_70#pic_center)
+![大纲](https://github.com/meetleong/AndroidBookshelf/blob/master/resources/Activity.png#pic_center)
 
 ---
 
