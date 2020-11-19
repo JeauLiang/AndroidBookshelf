@@ -1,12 +1,17 @@
 
-
-
 # 【Android练级之路】Activity
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+
+
+[TOC]
+
 
 
 
 ## 大纲
-![大纲](https://github.com/meetleong/AndroidBookshelf/blob/master/resources/Activity.png#pic_center)
+![大纲](https://gitee.com/meetliang/AndroidBookshelf/blob/master/resources/activity_lifecycle.png)
 
 ---
 
@@ -140,7 +145,7 @@ Scheme 路径的规则：
     <!--要想在别的 App 上能成功调起 App，必须添加 intent 过滤器-->
     <intent-filter>
         <!--协议部分配置，注意需要跟 web 配置相同-->
-        <!--协议部分，随便设置 aa://bb:1024/from?type=jeanboy-->
+        <!--协议部分，随便设置 aa://bb:1024/from?type=meetliang-->
         <data android:scheme="aa"
             android:host="bb"
             android:port="1024"
@@ -161,7 +166,7 @@ startActivity(intent);
 ```
 网页调用：
 ```xml
-<a href="aa://bb:1024/from?type=jeanboy">打开 App</a>
+<a href="aa://bb:1024/from?type=meetliang">打开 App</a>
 ```
 在 SchemeActivity 中可以处理 Scheme 跳转的参数：
 ```java
@@ -176,7 +181,7 @@ public class SchemeActivity extends AppCompatActivity {
             String type = uri.getQueryParameter("type");
             Log.e("SchemeActivity", "type:" + type);
 
-            if(type.equals("jeanboy")){
+            if(type.equals("meetliang")){
                 ActivityUtils.startActivity(XXXActivity.class);
             }else if(type.equals("main")){
                 ActivityUtils.startActivity(MainActivity.class);
@@ -189,7 +194,7 @@ public class SchemeActivity extends AppCompatActivity {
 如何判断一个 Scheme 是否有效：
 ```java
 PackageManager packageManager = getPackageManager();
-Uri uri = Uri.parse("aa://bb:1024/from?type=jeanboy");
+Uri uri = Uri.parse("aa://bb:1024/from?type=meetliang");
 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
 List<ResolveInfo> activities = packageManager.queryIntentActivities(intent, 0);
 boolean isValid = !activities.isEmpty();
