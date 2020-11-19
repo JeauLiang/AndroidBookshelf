@@ -29,6 +29,7 @@
 ---
 ## 页面状态保存与复制
 ![页面状态保存与复制](https://img-blog.csdnimg.cn/img_convert/63609b720c04ef1a754997b70ada8d64.png#pic_center)
+
 当系统“未经你许可”时销毁了你的activity，则onSaveInstanceState会被系统调用。用来保存状态，调用在onStop之前，但和onPause没有时序关系。onSaveInstanceState()适用于对临时性状态的保存，而onPause()适用于对数据的持久化保存
 
 <br>
