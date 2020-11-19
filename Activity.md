@@ -4,14 +4,13 @@
 # 【Android练级之路】Activity
 
 
-<hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
 
-# 大纲
+## 大纲
 ![大纲](https://github.com/meetleong/AndroidBookshelf/blob/master/resources/Activity.png#pic_center)
 
 ---
 
-#   生命周期
+##   生命周期
 ![生命周期](https://img-blog.csdnimg.cn/img_convert/d8d5a0b496b7999aaae45cb33f45facc.png#pic_center)
 + onCreate()：不可见
 + onStart()：可见，但没有焦点，不可交互
@@ -21,14 +20,14 @@
 + onDestroy()：不可见
 
 ---
-# 启动模式
+## 启动模式
 + Standard：系统默认，每次启动都会创建一个新的Activity实例
 + SingleTop：栈顶复用，如果处于栈顶，直接调用，非栈顶则创建新的Activity实例
 + SingleTask：栈内复用，如果存在栈内，则在其上所有Activity全部出栈，使得其位于栈顶，生命周期和SingleTop一样，app首页基本是用这
 + SingleInstance：这个是SingleTask加强本，系统会为要启动的Activity单独开一个栈，这个栈里只有它
 
 ---
-# 页面状态保存与复制
+## 页面状态保存与复制
 ![页面状态保存与复制](https://img-blog.csdnimg.cn/img_convert/63609b720c04ef1a754997b70ada8d64.png#pic_center)
 当系统“未经你许可”时销毁了你的activity，则onSaveInstanceState会被系统调用。用来保存状态，调用在onStop之前，但和onPause没有时序关系。onSaveInstanceState()适用于对临时性状态的保存，而onPause()适用于对数据的持久化保存
 
@@ -74,9 +73,8 @@ public void onRestoreInstanceState(Bundle savedInstanceState) {
 }
 ```
 
-
 ---
-# 页面跳转
+## 页面跳转
 ### startActivity()
 ### startActivityForResult()
 
