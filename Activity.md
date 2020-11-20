@@ -1,17 +1,13 @@
 
-# 【Android练级之路】Activity
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+# 【Android练级之路】Activity {ignore=true}
 
 
 
 [TOC]
 
 
-
-
 ## 大纲
-![大纲](https://gitee.com/meetliang/AndroidBookshelf/blob/master/resources/activity_lifecycle.png)
+![大纲](https://github.com/meetleong/AndroidBookshelf/blob/master/resources/Activity.png)
 
 ---
 
