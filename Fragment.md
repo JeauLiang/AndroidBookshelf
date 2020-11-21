@@ -1,5 +1,5 @@
 
-# 【Android练级之路】Activity {ignore=true}
+# 【Android练级之路】Fragment {ignore=true}
 
 [TOC]
 
@@ -7,17 +7,18 @@
 
 # 生命周期
 
-• onAttach()：当Fragment和Activity建立关联时调用
-• onCreate()
-• onCreateView()：当Fragment创建视图时调用
-• onActivityCreated()：当与Fragment相关联的Activity完成onCreate()之后调用
-• onStart()
-• onResume()
-• onPause()
-• onStop()
-• onDestroyView()：在Fragment中的布局被移除时调用
-• onDestroy()
-• onDetach()：当Fragment和Activity解除关联时调用
+![image](https://github.com/meetleong/AndroidBookshelf/blob/master/resources/fragment_lifecycle.png)
++ onAttach()：当Fragment和Activity建立关联时调用
++ onCreate()
++ onCreateView()：当Fragment创建视图时调用
++ onActivityCreated()：当与Fragment相关联的Activity完成onCreate()之后调用
++ onStart()
++ onResume()
++ onPause()
++ onStop()
++ onDestroyView()：在Fragment中的布局被移除时调用
++ onDestroy()
++ onDetach()：当Fragment和Activity解除关联时调用
 
 # Fragment通信
 ## Fragment向Activity传递数据
